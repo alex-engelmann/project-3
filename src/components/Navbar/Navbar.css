@@ -1,0 +1,9 @@
+.navbar {
+    background-color: teal;
+    color: white; 
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+ }
