@@ -1,9 +1,25 @@
 .navbar {
-    background-color: teal;
+    background-color: black;
     color: white; 
     font-family: 'Fira Sans', sans-serif;
+    font-size: 17px;
+}
+.nav-link{
+    color: #00ad9c;
 }
 
-.nav.navbar-nav.navbar-right li a {
+.navbar-brand{
+    color: #00ad9c;
+    font-size: 25px;
+    height: 125px;
+    margin-top: -60px;
+    margin-bottom: -25px
+}
+
+#navLogo{
+    width: 150px;
+}
+
+.navbar .navbar-nav > li > a:hover, .navbar > li > a:focus {
     color: white;
- }
+}
