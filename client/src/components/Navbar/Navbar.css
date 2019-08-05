@@ -1,25 +1,44 @@
-.navbar {
-    background-color: black;
-    color: white; 
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 17px;
+.grid-container {
+    width: 1000 px auto;
+    margin: 0px 0px;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr) 50px;
+    grid-template-columns: repeat(7, 1fr) 100px;
+    grid-gap: 20px;
 }
-.nav-link{
-    color: #00ad9c;
+.logo-grid {
+    grid-row: 1;
+    grid-row-end: span 2;
+    grid-column: 1;
+    grid-column-end: span 1;
+    height: 100px;
+    margin-left: 25px;
+}
+.nav-btn{
+    color: #818181;
+}
+.navbtn-grid{
+    grid-row: 3;
+    grid-row-end: span 1;
+    margin-left: 25px;
+}
+.nav-grid {
+    grid-row: 4;
+    grid-row-end: span 8;
+    grid-column: 1;
+    grid-column-end: span 1;
+    background-color: rgba(0,0,0,0.1);
+    margin-left: 25px;
 }
 
-.navbar-brand{
-    color: #00ad9c;
+.nav-grid a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
     font-size: 25px;
-    height: 125px;
-    margin-top: -60px;
-    margin-bottom: -25px
+    color: #818181;
+    display: block;
 }
 
-#navLogo{
-    width: 150px;
-}
-
-.navbar .navbar-nav > li > a:hover, .navbar > li > a:focus {
-    color: white;
+.nav-grid a:hover {
+    color: #f1f1f1;
 }
