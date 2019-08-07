@@ -14,11 +14,11 @@ const ArtistSchema = new Schema({
     },
     about: {
         type: String,
-        default: 'No description this time!'
+        default: 'No description at this time!'
     },
     image: {
         type: String,
-        default: 'No image this time!'
+        default: 'No image at this time!'
     },
     links: {
         type: Array,
