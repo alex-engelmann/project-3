@@ -7,7 +7,7 @@ mongoose.connect(
     process.env.MONGODB_URI || 'mongodb://localhost/artist'
 );
 
-const bookSeed = [
+const artistSeed = [
     {
         firstName: "Liam",
         lastName: "Hearts",
@@ -84,7 +84,7 @@ const bookSeed = [
 
 db.Artist
     .remove({})
-    .then(() => db.Artist.collection.insertMany(bookSeed))
+    .then(() => db.Artist.collection.insertMany(artistSeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);
