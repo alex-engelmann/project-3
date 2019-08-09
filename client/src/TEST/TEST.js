@@ -1,12 +1,58 @@
-import React from 'react'
+import React from 'react';
 import './TEST.css';
+import API from '../API.js';
+import Images from './test2.js'
 
-function TEST() {
-    return (
-        <React.Fragment>
+class Test extends React.Component {
+    state = {
+        artists: []
+    }
 
-        </React.Fragment>
-    )
+    componentDidMount() {
+        this.getArtists();
+    }
+
+    getArtists = () => {
+        API.find()
+            .then(res =>
+                this.setState({ artists: res.data })
+            )
+    }
+
+    render() {
+        return (
+
+            <div>
+                {this.state.artists.map(result => {
+                    return (
+                        // console.log(result.artworks[0].img)
+                        <Images
+                            image={result.artworks[0].img}
+                        ></Images>
+                    )
+                })}
+            </div>
+
+        )
+    }
 }
 
-export default TEST
+
+// function TEST() {
+
+
+
+// const getArtists = () => {
+// API.find()
+// .then(res => res.data
+//     )
+// }
+
+//     return (
+//         <React.Fragment>
+
+//         </React.Fragment>
+//     )
+// }
+
+export default Test

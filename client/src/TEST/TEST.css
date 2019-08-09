@@ -1,0 +1,8 @@
+.welcome {
+    grid-row: 1;
+    grid-row-end: span 2;
+    grid-column: 1;
+    grid-column-end: span 1;
+    height: 100px;
+    margin-left: 25px;
+}
