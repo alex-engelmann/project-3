@@ -31,7 +31,7 @@
     margin-left: 25px;
 }
 
-.nav-grid a {
+.nav-grid .router-link {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -39,6 +39,6 @@
     display: block;
 }
 
-.nav-grid a:hover {
+.nav-grid .router-link:hover {
     color: #f1f1f1;
 }
