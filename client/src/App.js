@@ -2,13 +2,12 @@ import React from 'react';
 import './App.css';
 import Test from './TEST/TEST.js';
 
-import Navbar from './components/Navbar/Navbar'
+import AppRouter from './utilities/Router'
 
 function App() {
   return (
-    <div className="App grid-container">
-      <Navbar />
-      <Test />
+    <div className="App">
+      <AppRouter />
     </div>
   );
 }
