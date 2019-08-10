@@ -1,6 +1,6 @@
 import React from 'react';
 import './TEST.css';
-import API from '../API.js';
+import API from '../utilities/API';
 import Images from './test2.js'
 
 class Test extends React.Component {
