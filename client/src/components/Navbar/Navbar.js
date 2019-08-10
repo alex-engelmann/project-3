@@ -5,7 +5,7 @@ import logo from "../images/TestLogo2.png";
 export default function Navbar() {
     return (
         <React.Fragment>
-            <div className="" >
+            <div className="grid-container" >
                 <div className='logo-grid' >
                     <img src={logo} className="logo" alt="logo" ></img>
                 </div>

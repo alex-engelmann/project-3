@@ -2,6 +2,7 @@ import React from 'react';
 import './TEST.css';
 import API from '../utilities/API';
 import Images from './test2.js'
+import ArtistCard from './artistCard.js'
 
 class Test extends React.Component {
     state = {
@@ -24,11 +25,21 @@ class Test extends React.Component {
 
             <div>
                 {this.state.artists.map(result => {
+                    console.log(result)
                     return (
-                        // console.log(result.artworks[0].img)
+                        <div>
+                        <h1>{result.firstName}</h1>
+                        <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about}></ArtistCard>
                         <Images
                             image={result.artworks[0].img}
                         ></Images>
+                        <Images
+                            image={result.artworks[1].img}
+                        ></Images>
+                        <Images
+                            image={result.artworks[2].img}
+                        ></Images>
+                        </div>
                     )
                 })}
             </div>
@@ -36,23 +47,5 @@ class Test extends React.Component {
         )
     }
 }
-
-
-// function TEST() {
-
-
-
-// const getArtists = () => {
-// API.find()
-// .then(res => res.data
-//     )
-// }
-
-//     return (
-//         <React.Fragment>
-
-//         </React.Fragment>
-//     )
-// }
 
 export default Test
