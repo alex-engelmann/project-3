@@ -44,7 +44,7 @@ function AppRouter() {
         <Router>
            
             <Navbar />
-
+            
             <Switch>
             {/* <Route path="/login" exact component={LoginPage} /> */}
                 {/* { <Route path="/" exact component={HomePage} /> */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import TEST from './TEST/TEST.js'
+import Test from './TEST/TEST.js';
 
 import AppRouter from './utilities/Router'
 

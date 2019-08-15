@@ -5,8 +5,13 @@
     grid-column: 1;
     grid-column-end: span 1;
     height: 100px;
+<<<<<<< HEAD
+    margin-left: 0px;
+    margin-top: -50px
+=======
     margin-left: 25px;
     margin-top: -50px;
+>>>>>>> f60d815f95a86a44b1afe842936f1cca3d25b66e
 }
 .nav-btn{
     color: #818181;
