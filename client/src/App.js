@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       <div className="grid-container">
 
-      <AppRouter />
+        <AppRouter />
       </div>
-      
+
     </div>
   );
 }
