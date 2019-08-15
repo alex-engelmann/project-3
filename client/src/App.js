@@ -6,7 +6,7 @@ import AppRouter from './utilities/Router'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App grid-container">
       <AppRouter />
       <Test />
     </div>

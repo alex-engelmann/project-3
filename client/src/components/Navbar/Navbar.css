@@ -1,22 +1,23 @@
 
 .logo-grid {
     grid-row: 1;
-    grid-row-end: span 2;
+    grid-row-end: span 1;
     grid-column: 1;
     grid-column-end: span 1;
     height: 100px;
-    margin-left: 25px;
+    margin-left: 0px;
+    margin-top: -50px
 }
 .nav-btn{
     color: #818181;
 }
 .navbtn-grid{
-    grid-row: 3;
+    grid-row: 2;
     grid-row-end: span 1;
     margin-left: 25px;
 }
 .nav-grid {
-    grid-row: 4;
+    grid-row: 3;
     grid-row-end: span 8;
     grid-column: 1;
     grid-column-end: span 1;

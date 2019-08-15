@@ -11,7 +11,7 @@ export default function images(props) {
     return (
         <div>
             <img
-            class="images"
+            className="images"
                 src={props.image}
                 alt='..'
             ></img>

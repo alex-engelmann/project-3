@@ -22,24 +22,24 @@ class Test extends React.Component {
 
     render() {
         return (
-
-            <div>
+            <div className="grid-img">
                 {this.state.artists.map(result => {
                     console.log(result)
                     return (
-                        <div>
-                        <h1>{result.firstName}</h1>
-                        <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about}></ArtistCard>
-                        <Images
-                            image={result.artworks[0].img}
-                        ></Images>
-                        <Images
-                            image={result.artworks[1].img}
-                        ></Images>
-                        <Images
-                            image={result.artworks[2].img}
-                        ></Images>
+                        <div className="container">
+                                <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about}></ArtistCard>
+                                <Images
+                                    image={result.artworks[0].img}
+                                ></Images>
+                                <Images
+                                    image={result.artworks[1].img}
+                                ></Images>
+                                <Images
+                                    image={result.artworks[2].img}
+                                ></Images>
                         </div>
+
+
                     )
                 })}
             </div>
