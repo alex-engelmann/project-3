@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './Navbar.css';
 import logo from "../images/TestLogo2.png";
 export default function Navbar() {
@@ -29,7 +29,7 @@ export default function Navbar() {
                             <Link href="/shopcart">shopping cart</Link>
                         </div>
                         <div className="router-link">
-                            <Link href="/about">about</Link>
+                            <Link to="/about">about</Link>
                         </div>
                         <div className="router-link">
                             <Link href="/contact">contact</Link>

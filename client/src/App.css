@@ -6,3 +6,12 @@
     text-align: left;
     background-color: #272B30;
 }
+
+.grid-container {
+    width: 100% auto;
+    margin: 0px 0px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr) 10%;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+}
