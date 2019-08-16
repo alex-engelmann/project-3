@@ -16,25 +16,25 @@ export default function Navbar() {
                 <div className='nav-grid collapse' id='nav-content'>
                     <div>
                         <div className="router-link">
-                            <Link href="/">home</Link>
+                            <Link className="text-decor" to="/">home</Link>
                         </div>
                         <div className="router-link">
-                            <Link href="/artwork">artwork</Link>
+                            <Link className="text-decor" to="/artwork">artwork</Link>
                         </div>
                         <div className="router-link">
-                            <Link href="/artists">artists</Link>
+                            <Link className="text-decor" to="/artists">artists</Link>
                         </div>
                         <div className="router-link">
-                            <Link href="/shopcart">shopping cart</Link>
+                            <Link className="text-decor" to="/shopcart">shopping cart</Link>
                         </div>
                         <div className="router-link">
-                            <Link to="/about">about</Link>
+                            <Link className="text-decor" to="/about">about</Link>
                         </div>
                         <div className="router-link">
-                            <Link href="/contact">contact</Link>
+                            <Link className="text-decor" to="/contact">contact</Link>
                         </div>
                         <div className="router-link">
-                            <Link href="/login">login</Link>
+                            <Link className="text-decor" to="/login">login</Link>
                         </div>
                         <form className="form-inline md-form form-sm active-cyan active-cyan-2 mt-2">
                             <input className="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
