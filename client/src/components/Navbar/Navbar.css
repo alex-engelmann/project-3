@@ -27,14 +27,23 @@
 }
 
 .nav-grid .router-link {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
+    padding: 6px 8px 6px 16px !important;
+    text-decoration: none !important;
     font-size: 25px;
-    color: #818181;
+    color: #818181 !important;
     display: flex;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .nav-grid .router-link:hover {
     color: #f1f1f1;
+}
+
+.text-decor {
+    text-decoration: none !important;
+    color: #818181 !important;
+}
+
+.text-decor:hover {
+    color: #f1f1f1 !important;
 }

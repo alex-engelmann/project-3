@@ -2,46 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from '../../components/Navbar/Navbar'
 // import * as Home from '../../pages/home'
- import About from '../../pages/about'
+import About from '../../pages/about'
 import Artists from '../../pages/artists'
 // import * as Artist from '../../pages/artist'
 // import * as Artwork from '../../pages/artwork'
 // import * as Contact from '../../pages/contact'
 // import * as ShoppingCart from '../../pages/shoppingCart'
-
-// function LoginPage() {
-//     return { Navbar };
-// }
-
-// function HomePage() {
-//     return { Home };
-// }
-
-// function AboutPage() {
-//     return { About };
-// }
-
-// function ArtistsPage() {
-//     return { Artists };
-// }
-
-// function ArtistPage() {
-//     return { Artist };
-// }
-
-// function ArtworkPage() {
-//     return { Artwork };
-// }
-
-// function ContactPage() {
-//     return { Contact };
-// }
-
-// function ShoppingCartPage() {
-//     return { ShoppingCart };
-// }
-
-
 
 function AppRouter() {
     return (
