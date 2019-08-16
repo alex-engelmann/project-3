@@ -11,7 +11,7 @@
     margin: 0px 0px;
     display: grid;
     grid-template-rows: 5rem 2.5rem auto;
-    grid-template-columns: 12% 80%;
+    grid-template-columns: 13rem auto;
     grid-gap: 25px;
 }
 
