@@ -36,10 +36,6 @@ export default function Navbar() {
                         <div className="router-link">
                             <Link className="text-decor" to="/login">login</Link>
                         </div>
-                        <form className="form-inline md-form form-sm active-cyan active-cyan-2 mt-2">
-                            <input className="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
-                                aria-label="Search"></input>
-                        </form>
                     </div>
                 </div>
         </React.Fragment>

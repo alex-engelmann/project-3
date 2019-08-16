@@ -21,7 +21,6 @@
     grid-row-end: span 8;
     grid-column: 1;
     grid-column-end: span 1;
-    background-color: rgba(0,0,0,0.1);
     margin-left: 25px;
     pointer-events: none;
 }
