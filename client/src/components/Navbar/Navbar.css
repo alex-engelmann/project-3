@@ -4,9 +4,9 @@
     grid-row-end: span 1;
     grid-column: 1;
     grid-column-end: span 1;
-    height: 100px;
-    margin-left: 25px;
-    margin-top: -50px;
+    height: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
 }
 .nav-btn{
     color: #818181;
