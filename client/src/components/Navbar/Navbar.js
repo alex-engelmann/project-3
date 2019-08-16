@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './Navbar.css';
-import logo from "../images/TestLogo2.png";
+import logo from "../images/newlogo.png";
 export default function Navbar() {
     return (
         <React.Fragment>
