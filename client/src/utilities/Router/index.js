@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/Navbar'
 // import * as Home from '../../pages/home'
  import About from '../../pages/about'
 import Artists from '../../pages/artists'
+// import * as Artist from '../../pages/artist'
 // import * as Artwork from '../../pages/artwork'
 // import * as Contact from '../../pages/contact'
 // import * as ShoppingCart from '../../pages/shoppingCart'
@@ -22,6 +23,10 @@ import Artists from '../../pages/artists'
 
 // function ArtistsPage() {
 //     return { Artists };
+// }
+
+// function ArtistPage() {
+//     return { Artist };
 // }
 
 // function ArtworkPage() {
@@ -52,7 +57,8 @@ function AppRouter() {
                 <Route path="/artists" component={Artists} />
                 {/* <Route path="/artwork" component={ArtworkPage} />
                 <Route path="/contact" component={ContactPage} />
-                <Route path="/shopcart" component={ShoppingCartPage} />} */}
+                <Route path="/artist/:id" component={ArtistPage} />
+                <Route path="/shopcart" component={ShoppingCartPage} /> */}
             </Switch>
          
         </Router>
