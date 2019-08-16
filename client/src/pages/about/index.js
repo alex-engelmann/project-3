@@ -41,4 +41,3 @@ function About() {
 
 
 export default About;
-  // when importin g "lamnding.js" the state
