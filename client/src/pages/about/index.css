@@ -1,11 +1,11 @@
 .about-grid {
-    grid-row: 1;
-    grid-row-end: span 9;
+    grid-row: 3;
     grid-column: 2;
     grid-column-end: span 2;
-    background-color: rgba(0,0,0,0.1);
     margin-left: 25px !important;
     pointer-events: none;
-  
 }
 
+/* .about-grid > .App > #root > div {
+    height: 100%;
+  } */
