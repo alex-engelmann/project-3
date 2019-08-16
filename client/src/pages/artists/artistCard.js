@@ -10,7 +10,7 @@ export default function ArtistCard(props) {
                 <div className="card">
                     <img src={props.artistImg} className="cardImg" alt="Denim Jeans" style={styles}></img>
                     <p className="price"></p>
-                    <p>{props.name}</p>
+                    <p className="artistName">{props.name}</p>
                     <p><button>View Artist</button></p>
                 </div>
             </div>
