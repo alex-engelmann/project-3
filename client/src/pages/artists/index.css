@@ -28,7 +28,10 @@
     height: 250px;
     width: 18rem;
     margin-top: 1rem;
-
+    transition: transform .2s;
+}
+.images:hover {
+  transform: scale(1.1); 
 }
 .card {
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
