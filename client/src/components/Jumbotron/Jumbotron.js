@@ -8,7 +8,7 @@ export default function Jumbotron() {
             <div className="jumbotron justify-content-center">
                 <div className="container">
                     <h1 className="welcome">Welcome!</h1>
-                    <img id="spiral" src={spiral}></img>
+                    <img id="spiral" src={spiral} alt="spiral logo"></img>
                     <p className="lead">We hope you enjoy perusing our catalogue</p>
                 </div>
             </div>
