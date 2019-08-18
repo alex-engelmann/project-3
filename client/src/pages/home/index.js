@@ -63,8 +63,8 @@ export default function HomePage() {
             <div>
                 <Jumbotron></Jumbotron>
             </div>
-            <div>Today is the
-            <Moment format="DD"></Moment>
+            <div>Today is the 
+            <Moment format="Do"></Moment>
             </div>
             <div>
                 <Artists></Artists>
