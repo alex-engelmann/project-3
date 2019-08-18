@@ -3,6 +3,7 @@ import Jumbotron from '../../components/Jumbotron';
 import API from '../../utilities/API';
 import Images from '../../components/ArtistImage';
 import ArtistCard from '../../components/ArtistCard';
+import Moment from 'react-moment';
 
 import './index.css';
 
@@ -25,24 +26,30 @@ class Artists extends React.Component {
     render() {
         return (
             <div className="grid-img">
-                {this.state.artists.map(result => {
-                    console.log(result)
-                    return (
-                        <div className="flex-container">
-                            <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about}></ArtistCard>
-                            <Images
-                                image={result.artworks[0].img}
-                            ></Images>
-                            <Images
-                                image={result.artworks[1].img}
-                            ></Images>
-                            <Images
-                                image={result.artworks[2].img}
-                            ></Images>
-                        </div>
+
+                {/* I'm not quite sure how to implement this and the Moment library to pick a different daily artist */}
+                {/* let randomDay = Math.floor(Math.random() * this.state.artists.length); */}
 
 
-                    )
+                {this.state.artists.map((result, index) => {
+                    // console.log(result)
+                    if (index === 0) {
+                        return (
+                            <div className="flex-container">
+                                <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about}></ArtistCard>
+                                <Images
+                                    image={result.artworks[0].img}
+                                ></Images>
+                                <Images
+                                    image={result.artworks[1].img}
+                                ></Images>
+                                <Images
+                                    image={result.artworks[2].img}
+                                ></Images>
+                            </div>
+                        )
+                    }
+
                 })}
             </div>
 
@@ -55,6 +62,9 @@ export default function HomePage() {
         <div>
             <div>
                 <Jumbotron></Jumbotron>
+            </div>
+            <div>Today is the
+            <Moment format="DD"></Moment>
             </div>
             <div>
                 <Artists></Artists>
