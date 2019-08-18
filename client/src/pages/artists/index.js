@@ -1,8 +1,8 @@
 import React from 'react';
 import './index.css';
 import API from '../../utilities/API';
-import Images from './artistImg.js'
-import ArtistCard from './artistCard.js'
+import Images from '../../components/ArtistImage';
+import ArtistCard from '../../components/ArtistCard';
 
 class Artists extends React.Component {
     state = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Jumbotron.css';
+import './index.css';
 import spiral from "../images/spiral2.PNG";
 export default function Jumbotron() {
     return (
