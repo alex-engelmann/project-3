@@ -27,7 +27,7 @@
 
 #spiral {
   display: inline-block;
-  border: 30px solid #272B30;
+  border: 1rem solid #272B30;
   border-radius: 60%;
   width: 50%;
   height: auto;
