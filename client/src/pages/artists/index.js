@@ -1,8 +1,8 @@
 import React from 'react';
 import './index.css';
 import API from '../../utilities/API';
-import Images from './artistImg.js'
-import ArtistCard from './artistCard.js'
+import Images from '../../components/ArtistImage';
+import ArtistCard from '../../components/ArtistCard';
 
 class Artists extends React.Component {
     state = {
@@ -24,7 +24,7 @@ class Artists extends React.Component {
         return (
             <div className="grid-img">
                 {this.state.artists.map(result => {
-                    console.log(result)
+                    // console.log(result)
                     return (
                         <div className="flex-container">
                                 <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about}></ArtistCard>

@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from '../../components/Navbar/Navbar'
-// import * as Home from '../../pages/home'
+import HomePage from '../../pages/home'
 import About from '../../pages/about'
 import Artists from '../../pages/artists'
 // import * as Artist from '../../pages/artist'
@@ -18,7 +18,7 @@ function AppRouter() {
             
             <Switch>
             {/* <Route path="/login" exact component={LoginPage} /> */}
-                {/* { <Route path="/" exact component={HomePage} /> */}
+                <Route path="/" exact component={HomePage} />
                 <Route path="/about" component={About} />
                 <Route path="/artists" component={Artists} />
                 <Route path="/artwork" component={Artwork} />
