@@ -1,10 +1,8 @@
-
 import React from 'react';
 import API from '../../utilities/API';
 import Modal from '../../components/noShoppingModal'
 import ModalTrigger from '../../components/noShoppingTrigger'
 import './index.css';
-
 
 class Artwork extends React.Component {
     state = {

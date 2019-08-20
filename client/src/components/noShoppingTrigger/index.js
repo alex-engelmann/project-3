@@ -10,4 +10,6 @@ const ModalTrigger = () => {
     )
 }
 
+
 export default ModalTrigger
+
