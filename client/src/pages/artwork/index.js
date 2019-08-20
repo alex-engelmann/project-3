@@ -2,6 +2,7 @@ import React from 'react';
 import API from '../../utilities/API';
 import Modal from '../../components/noShoppingModal'
 import ModalTrigger from '../../components/noShoppingTrigger'
+import PageTitle from '../../components/Title'
 import './index.css';
 
 class Artwork extends React.Component {
@@ -45,25 +46,27 @@ class Artwork extends React.Component {
 
     render() {
         return (
-            <div className="img-grid">
-                <h1 className="bounceInRight" >Artwork</h1>
-                <div className="shopBG">
-                    <div className="flex-container">
-                        {this.state.artworks.map(result => {
-                            console.log(result)
-                            return (
-                                <div>
-                                    <img
-                                        className="images"
-                                        src={result}
-                                        alt='..'
-                                    ></img>
-                                    <ModalTrigger />
-                                </div>
-                            )
-                        })}
+            <div>
+                <PageTitle title="Artwork" />
+                <div className="img-grid">
+                    <div className="shopBG">
+                        <div className="artwork-flex-container">
+                            {this.state.artworks.map(result => {
+                                console.log(result)
+                                return (
+                                    <div>
+                                        <img
+                                            className="images"
+                                            src={result}
+                                            alt='..'
+                                        ></img>
+                                        <ModalTrigger />
+                                    </div>
+                                )
+                            })}
+                        </div>
+                        <Modal />
                     </div>
-                    <Modal />
                 </div>
             </div>
         )
