@@ -1,24 +1,15 @@
-.welcome {
-    grid-row: 1;
-    grid-row-end: span 2;
-    grid-column: 1;
-    grid-column-end: span 1;
-    height: 100px;
-    margin-left: 25px;
-}
-.cardImg{
+
+/* .cardImg{
     height: 250px;
     border-radius: 50%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-
-
 }
 .artistName{
   color: white;
   font-size: 25px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
-}
+} */
 .flex-container{
   display: flex;
   flex-flow: row;
@@ -33,15 +24,17 @@
 .images {
   display: flex;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
     height: 250px;
     width: 18rem;
+    margin: 1rem;
     margin-top: 1rem;
     transition: transform .2s;
 }
 .images:hover {
   transform: scale(1.1); 
 }
-.card {
+/* .card {
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
     max-width: 275px;
     background: rgba(0,0,0,0);
@@ -74,4 +67,4 @@
   .card button:hover {
     opacity: 0.7;
     
-  }
+  } */

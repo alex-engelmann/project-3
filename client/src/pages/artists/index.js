@@ -24,10 +24,10 @@ class Artists extends React.Component {
         return (
             <div className="grid-img">
                 {this.state.artists.map(result => {
-                    // console.log(result)
+                    console.log(result)
                     return (
                         <div className="flex-container">
-                                <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about}></ArtistCard>
+                                <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about} id={result._id}></ArtistCard>
                                 <Images
                                     image={result.artworks[0].img}
                                 ></Images>
