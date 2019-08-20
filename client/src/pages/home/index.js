@@ -7,9 +7,10 @@ import Moment from 'react-moment';
 
 import './index.css';
 
-class Artists extends React.Component {
+class DailyArtist extends React.Component {
     state = {
-        artists: []
+        artists: [],
+        artistOfTheDay: 1
     }
 
     componentDidMount() {
@@ -19,7 +20,7 @@ class Artists extends React.Component {
     getArtists = () => {
         API.find()
             .then(res =>
-                this.setState({ artists: res.data })
+                this.setState({ artists: res.data }),
             )
     }
 
@@ -27,13 +28,9 @@ class Artists extends React.Component {
         return (
             <div className="grid-img">
 
-                {/* I'm not quite sure how to implement this and the Moment library to pick a different daily artist */}
-                {/* let randomDay = Math.floor(Math.random() * this.state.artists.length); */}
-
-
                 {this.state.artists.map((result, index) => {
-                    // console.log(result)
-                    if (index === 0) {
+
+                    if (index === this.state.artistOfTheDay) {
                         return (
                             <div className="flex-container">
                                 <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about}></ArtistCard>
@@ -63,11 +60,11 @@ export default function HomePage() {
             <div>
                 <Jumbotron></Jumbotron>
             </div>
-            <div>Today is the 
-            <Moment format="Do"></Moment>
-            </div>
+            {/* <div>Today is the
+            <Moment format="Do"></Moment> of the month
+            </div> */}
             <div>
-                <Artists></Artists>
+                <DailyArtist />
             </div>
         </div>
 
