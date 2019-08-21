@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import API from '../../utilities/API';
+import PageTitle from '../../components/Title'
 
 class Artist extends React.Component {
     state = {
@@ -28,12 +29,15 @@ class Artist extends React.Component {
         })
     }
 
+
     render() {
         return (
             <div>
-                <h1>hello</h1>
+                {this.state && this.state.currentArtist.image &&
+                    < PageTitle title={this.state.currentArtist.firstName + " " + this.state.currentArtist.lastName} />}
+                
                 <div className="artist-flex-container">
-                    <img src={this.state.currentArtist.image} alt=".."></img>
+                    <img id="artistImage" src={this.state.currentArtist.image} alt=".."></img>
                 </div>
             </div>
         )
