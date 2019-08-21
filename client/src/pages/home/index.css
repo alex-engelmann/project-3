@@ -19,12 +19,15 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
 }
-.flex-container{
+.home-flex-container{
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
+  margin: 1rem 0.5rem;
+  padding: 0.2rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.2);
 }
 .grid-img {
   grid-column: 2;
@@ -35,7 +38,7 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     height: 250px;
     width: 18rem;
-    margin-top: 1rem;
+    margin: 0.5rem;
     transition: transform .2s;
 }
 .images:hover {
@@ -49,7 +52,7 @@
     text-align: center;
     vertical-align: center;
     font-family: arial;
-    border: none;
+    border: 0.2rem solid rgba(0, 0, 0, 0.2);
   }
   
   .price {
@@ -68,7 +71,6 @@
     width: 100%;
     font-size: 18px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-
   }
   
   .card button:hover {

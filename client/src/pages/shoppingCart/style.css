@@ -1,0 +1,24 @@
+  .flex-container{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .shopBG {
+    margin: 1rem 0.5rem;
+    border: 0.2rem solid rgba(0, 0, 0, 0.2);
+    padding: 0.2rem;
+    height: 95%;
+  }
+  .shopping-grid {
+    grid-column: 2;
+    height: 100%;
+    grid-row: 3;
+  }
+  .cartLeftSide {
+      align-content: flex-start;
+      background-color: rgba(64,173,156, 0.2);
+      padding: 0.2rem;
+      margin: 0.2rem;
+  }

@@ -3,6 +3,7 @@ import './index.css';
 import API from '../../utilities/API';
 import Images from '../../components/ArtistImage';
 import ArtistCard from '../../components/ArtistCard';
+import PageTitle from '../../components/Title'
 
 class Artists extends React.Component {
     state = {
@@ -22,11 +23,12 @@ class Artists extends React.Component {
 
     render() {
         return (
-            <div className="grid-img">
-                {this.state.artists.map(result => {
-                    // console.log(result)
-                    return (
-                        <div className="flex-container">
+            <div>
+                < PageTitle title="Our Artists" />
+                <div className="grid-img">
+                    {this.state.artists.map(result => {
+                        return (
+                            <div className="artists-flex-container">
                                 <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about}></ArtistCard>
                                 <Images
                                     image={result.artworks[0].img}
@@ -37,13 +39,11 @@ class Artists extends React.Component {
                                 <Images
                                     image={result.artworks[2].img}
                                 ></Images>
-                        </div>
-
-
-                    )
-                })}
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
-
         )
     }
 }
