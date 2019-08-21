@@ -17,21 +17,21 @@ class Artist extends React.Component {
                 this.setState({ artists: res.data })
             )
     }
+
     getArtist = () => {
         var URL = window.location.pathname;
         this.state.artists.map(results => {
             if ("/artist/" + results._id === URL) {
-                return console.log(results);
+                return results.image;
             }
-            else return console.log("not working")
         })
     }
 
     render() {
         return (
             <div>
-                {this.getArtist()}
                 <h1>hello</h1>
+                <img src={this.state.getArtist()} alt=".."></img>
             </div>
         )
     }
