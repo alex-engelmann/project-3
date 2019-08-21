@@ -4,7 +4,6 @@ import spiral from "../images/spiral2.PNG";
 export default function Jumbotron() {
     return (
         <React.Fragment>
-           
             <div className="jumbotron justify-content-center">
                 <div className="container">
                     <h1 className="welcome">Welcome!</h1>

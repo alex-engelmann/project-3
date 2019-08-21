@@ -7,7 +7,7 @@ import Artists from '../../pages/artists'
 import Artist from '../../pages/artist'
 import Artwork from '../../pages/artwork'
 // import * as Contact from '../../pages/contact'
-// import * as ShoppingCart from '../../pages/shoppingCart'
+import ShoppingCart from '../../pages/shoppingCart'
 
 function AppRouter() {
     return (
@@ -17,7 +17,6 @@ function AppRouter() {
             <Navbar />
             
             <Switch>
-            {/* <Route path="/login" exact component={LoginPage} /> */}
                 <Route path="/" exact component={HomePage} />
                 <Route path="/about" component={About} />
                 <Route path="/artists" component={Artists} />
@@ -25,8 +24,8 @@ function AppRouter() {
                 <Route path="/artist" component={Artist} />
 
                 {/* <Route path="/contact" component={ContactPage} />
-                <Route path="/artist/:id" component={ArtistPage} />
-                <Route path="/shopcart" component={ShoppingCartPage} /> */}
+                <Route path="/artist/:id" component={ArtistPage} /> */}
+                <Route path="/shopcart" component={ShoppingCart} />
             </Switch>
          
         </Router>
