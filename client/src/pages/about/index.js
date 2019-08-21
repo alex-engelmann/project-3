@@ -1,6 +1,7 @@
 import React from "react";
 import Row from "../../components/Row";
 import Col from "../../components/Col";
+import { Link } from "react-router-dom";
 import "./index.css";
 // import Card from "../components/Card";
 // import Container from "../about"
@@ -34,9 +35,93 @@ function About() {
           </Col>
         </Row>
       </div>
+
+      {/* here is the team data */}
+
+<div className="container">
+ 
+ <div className="row">
+ 
+   <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+     <div className="our-team">
+       <div className="picture">
+         <img className="img-fluid" src="jo2.jpg" />
+       </div>
+       <div className="team-content">
+         <h3 className="name">Johanna Casimir-Mahoney</h3>
+         <h4 className="title">Software Developer</h4>
+       </div>
+       <ul className="social">
+         <li><Link className="social-link" to="https://github.com/JohannaCasimirMahoney" className="fab fa-github"></Link></li>
+         <li><Link className="social-link" to="https://www.linkedin.com/in/johannacasimirmahoney" className="fab fa-linkedin"></Link></li>
+         <li><Link className="social-link" to="mailto:johannamahoney87@gmail" className="fab fa-dribbble"></Link></li>
+       </ul>
+     </div>
+   </div>
+
+
+
+       <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+     <div className="our-team">
+       <div className="picture">
+         <img className="img-fluid" src="jim.jpg" />
+       </div>
+       <div className="team-content">
+         <h3 className="name">James Tatarakis</h3>
+         <h4 className="title">Software Developer</h4>
+       </div>
+       <ul className="social">
+         <li> <Link className="social-link" to="https://github.com/JimTatarakis" className="fab fa-github"></Link></li>
+         <li><Link className="social-link" to="https://www.linkedin.com/in/james-tatarakis-9a595394/" className="fab fa-linkedin"></Link></li>
+         <li><Link className="social-link" to="mailto:jimtatarakis@gmail.com" className="fab fa-dribbble"></Link></li>
+       </ul>
+     </div>
+   </div>
+
+
+
+       <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+     <div className="our-team">
+       <div className="picture">
+         <img className="img-fluid" src="alex.png" />
+       </div>
+       <div className="team-content">
+         <h3 className="name">Alex Engelmann</h3>
+         <h4 className="title">Software Developer</h4>
+       </div>
+       <ul className="social">
+         <li><Link className="social-link" to="https://github.com/JimTatarakis" className="fab fa-github"></Link></li>
+         <li><Link className="social-link" to="https://www.linkedin.com/in/alex-engelmann/" className="fab fa-linkedin"></Link></li>
+         <li><Link className="social-link" to="mailto:alex.engelmann@gmail.com" className="fab fa-dribbble"></Link></li>
+       </ul>
+     </div>
+   </div>
+
+
+       <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+     <div className="our-team">
+       <div className="picture">
+         <img className="img-fluid" src="liam.png" />
+       </div>
+       <div className="team-content">
+         <h3 className="name">Liam Hartigan</h3>
+         <h4 className="title">Software Developer</h4>
+       </div>
+       <ul className="social">
+         <li><Link className="social-link" to="https://github.com/alex-engelmann" className="fab fa-github"></Link></li>
+         <li><Link className="social-link" to="https://www.linkedin.com/in/alex-engelmann/" className="fab fa-linkedin"></Link></li>
+         <li><Link className="social-link" to="mailto:alex.engelmann@gmail.com" className="fab fa-dribbble"></Link></li>
+       </ul>
+     </div>
+   </div>
+   </div>
+ </div>
+
     </div>
   );
 }
+
+
 
 
 
