@@ -4,7 +4,8 @@ import API from '../../utilities/API';
 
 class Artist extends React.Component {
     state = {
-        artists: []
+        artists: [],
+        currentArtist: {}
     }
 
     componentDidMount() {
@@ -14,7 +15,7 @@ class Artist extends React.Component {
     getArtists = () => {
         API.find()
             .then(res =>
-                this.setState({ artists: res.data })
+                this.setState({ artists: res.data }, () => this.getArtist())
             )
     }
 
@@ -22,7 +23,7 @@ class Artist extends React.Component {
         var URL = window.location.pathname;
         this.state.artists.map(results => {
             if ("/artist/" + results._id === URL) {
-                return results.image;
+                this.setState({ currentArtist: results })
             }
         })
     }
@@ -31,7 +32,9 @@ class Artist extends React.Component {
         return (
             <div>
                 <h1>hello</h1>
-                <img src={this.state.getArtist()} alt=".."></img>
+                <div className="artist-flex-container">
+                    <img src={this.state.currentArtist.image} alt=".."></img>
+                </div>
             </div>
         )
     }
