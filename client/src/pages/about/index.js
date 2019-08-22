@@ -1,7 +1,7 @@
 import React from "react";
 import Row from "../../components/Row";
 import Col from "../../components/Col";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import jo2 from "../../assets/jo2.jpg";
 import jim from "../../assets/jim.jpg";
 import alex from "../../assets/alex.jpg";
@@ -44,7 +44,7 @@ function About() {
 
         {/* here is the team data */}
 
-        <div className="container">
+        <div className="members-container">
 
           <div className="row">
 
@@ -58,7 +58,7 @@ function About() {
                   <h4 className="title">Software Developer</h4>
                 </div>
                 <ul className="social">
-                  <li><a className="social-link"href="https://github.com/JohannaCasimirMahoney" target="_blank" className="fab fa-github"></a></li>
+                  <li><a className="social-link" href="https://github.com/JohannaCasimirMahoney" target="_blank" className="fab fa-github"></a></li>
                   <li><a className="social-link" href="https://www.linkedin.com/in/johannacasimirmahoney" target="_blank" className="fab fa-linkedin"></a></li>
                   <li><a className="social-link" href="mailto:johannamahoney87@gmail" target="_blank" className="fab fa-dribbble"></a></li>
                 </ul>
@@ -84,8 +84,6 @@ function About() {
               </div>
             </div>
 
-
-
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="our-team">
                 <div className="picture">
@@ -96,13 +94,12 @@ function About() {
                   <h4 className="title">Software Developer</h4>
                 </div>
                 <ul className="social">
-                  <li><a className="social-link" href="https://github.com/alex-engelmann" target="_blank"className="fab fa-github"></a></li>
+                  <li><a className="social-link" href="https://github.com/alex-engelmann" target="_blank" className="fab fa-github"></a></li>
                   <li><a className="social-link" href="https://www.linkedin.com/in/alex-engelmann/" target="_blank" className="fab fa-linkedin"></a></li>
                   <li><a className="social-link" href="mailto:alex.engelmann@gmail.com" target="_blank" className="fab fa-dribbble"></a></li>
                 </ul>
               </div>
             </div>
-
 
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="our-team">
@@ -128,9 +125,4 @@ function About() {
 
   );
 }
-
-
-
-
-
 export default About;
