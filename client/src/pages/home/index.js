@@ -33,17 +33,22 @@ class DailyArtist extends React.Component {
 
                     if (index === this.state.artistOfTheDay) {
                         return (
-                            <div className="home-flex-container">
-                                <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about}></ArtistCard>
-                                <Images
-                                    image={result.artworks[0].img}
-                                ></Images>
-                                <Images
-                                    image={result.artworks[1].img}
-                                ></Images>
-                                <Images
-                                    image={result.artworks[2].img}
-                                ></Images>
+                            <div>
+                                <div className="Feat-Wrapper" >
+                                    <h1 className="Feat-Title" >Featured Artist</h1>
+                                </div>
+                                <div className="home-flex-container">
+                                    <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about}></ArtistCard>
+                                    <Images
+                                        image={result.artworks[0].img}
+                                    ></Images>
+                                    <Images
+                                        image={result.artworks[1].img}
+                                    ></Images>
+                                    <Images
+                                        image={result.artworks[2].img}
+                                    ></Images>
+                                </div>
                             </div>
                         )
                     }
