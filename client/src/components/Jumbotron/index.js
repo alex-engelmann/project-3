@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import spiral from "../images/spiral2.PNG";
+import spiral from "../../assets/TealBG1.jpg";
 export default function Jumbotron() {
     return (
         <React.Fragment>
