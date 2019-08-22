@@ -8,6 +8,7 @@ import Artists from '../../pages/artists'
 import Artwork from '../../pages/artwork'
 import Contact from '../../pages/contact'
 import ShoppingCart from '../../pages/shoppingCart'
+import Login from '../../pages/login'
 
 function AppRouter() {
     return (
@@ -24,6 +25,7 @@ function AppRouter() {
                  <Route path="/contact" component={Contact} />
                 {/*<Route path="/artist/:id" component={ArtistPage} /> */}
                 <Route path="/shopcart" component={ShoppingCart} />
+                <Route path="/login" component={Login} />
             </Switch>
          
         </Router>
