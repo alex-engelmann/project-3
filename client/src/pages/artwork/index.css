@@ -7,7 +7,7 @@
     transition: transform .2s;
   }
   .images:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
   .artwork-flex-container{
     display: flex;
