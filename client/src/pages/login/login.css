@@ -1,0 +1,24 @@
+.Login-flex-container{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-content: middle;
+    width: 1000px;
+  }
+  .LoginBG {
+    margin: 1rem 0.5rem;
+    /* padding: 0.2rem; */
+    height: auto;
+    align-content: flex-start;
+  }
+  .Login-grid {
+    grid-column: 2;
+    height: auto;
+    grid-row: 3;
+  }
+
+  .LoginImg {
+    transform: scale(0.6,0.6);
+    border: 0.2rem solid rgba(0, 0, 0, 0.2);
+    align-content: flex-start;
+  }
