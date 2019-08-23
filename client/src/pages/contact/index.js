@@ -1,5 +1,5 @@
 import Iframe from "react-iframe"
-import React, { Component } from "react";
+import React from "react";
 // import "./index.css";
 // import "../../pages/contact/contact.css"
 import "./contact.css";

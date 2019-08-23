@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import API from '../../utilities/API';
 import PageTitle from '../../components/Title'
-import Modal from '../../components/noShoppingModal';
+// import Modal from '../../components/noShoppingModal';
 import ModalTrigger from '../../components/noShoppingTrigger';
 
 class Artist extends React.Component {
@@ -26,8 +26,9 @@ class Artist extends React.Component {
         var URL = window.location.pathname;
         this.state.artists.map(results => {
             if ("/artist/" + results._id === URL) {
-                this.setState({ currentArtist: results })
+                return this.setState({ currentArtist: results })
             }
+            return console.log("hello");
         })
     }
 
