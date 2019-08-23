@@ -1,7 +1,7 @@
 import React from 'react';
 import API from '../../utilities/API';
-import Modal from '../../components/noShoppingModal'
-import ModalTrigger from '../../components/noShoppingTrigger'
+import Modal from '../../components/noShoppingModal';
+import ModalTrigger from '../../components/noShoppingTrigger';
 import PageTitle from '../../components/Title'
 import './index.css';
 
