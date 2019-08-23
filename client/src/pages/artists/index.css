@@ -9,8 +9,8 @@
   /* padding: 0.2rem; */
   width: 95%;
 }
- .grid-img {
-  grid-column: 2;
+.grid-img {
+  grid-column: 1;
   grid-row: 3;
 }
 .artists-flex-container .images {

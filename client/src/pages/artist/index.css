@@ -1,5 +1,19 @@
 .artist-flex-container #artistImage {
-    width: 25rem;
-    height: 25rem;
-    /* border-radius: 25%; */
+    width: 35%;
+    height: 35%;
+    margin: 1rem;
+    border-radius: 25%;
+}
+
+.artist-flex-container p {
+width: 60%;
+height: 60%;
+
+}
+
+.artist-flex-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
