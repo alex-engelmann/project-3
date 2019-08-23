@@ -39,12 +39,12 @@ export default class Navbar extends React.Component {
                         <div className="router-link">
                             <Link className="text-decor" to="/contact">contact</Link>
                         </div>
-                        <div className="router-link">
+                        {/* <div className="router-link">
                             <Login></Login>
                         </div>
                         <div className="router-link">
                             <Logout></Logout>
-                        </div>
+                        </div> */}
                         <div className="router-link">
                             {/* <button type="button" className="btn btn-primary" onClick="getUserInfo();">Get current user info</button> */}
                         </div>
