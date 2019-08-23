@@ -18,9 +18,9 @@ app.use(express.json());
 
 // Sets up the Express App - Static Assets
 // =============================================================
-if (process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === "production") { 
     app.use(express.static("client/build"));
-  }
+ }
 
 // DB: Config
 // =============================================================
@@ -43,7 +43,7 @@ app.use(routes);
 
 // Server: Define Port
 // =============================================================
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3001;
 
 // Server: Starts our Express Server
 // =============================================================
