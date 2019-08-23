@@ -3,7 +3,7 @@ import './index.css';
 import API from '../../utilities/API';
 import Images from '../../components/ArtistImage';
 import ArtistCard from '../../components/ArtistCard';
-import PageTitle from '../../components/Title'
+import PageTitle from '../../components/Title';
 
 class Artists extends React.Component {
     state = {
@@ -29,7 +29,7 @@ class Artists extends React.Component {
                     {this.state.artists.map(result => {
                         return (
                             <div className="artists-flex-container">
-                                <ArtistCard name={result.firstName + " " + result.lastName} artistImg={result.image} bio={result.about}></ArtistCard>
+                                <ArtistCard name={result.firstName + " " + result.lastName} id={result._id} artistImg={result.image} bio={result.about}></ArtistCard>
                                 <Images
                                     image={result.artworks[0].img}
                                 ></Images>
