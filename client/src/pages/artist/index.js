@@ -28,9 +28,8 @@ class Artist extends React.Component {
             if ("/artist/" + results._id === URL) {
                 return this.setState({ currentArtist: results })
             }
-            else return "hello";
-        }
-        )
+            return console.log("hello");
+        })
     }
 
 

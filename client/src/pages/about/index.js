@@ -1,15 +1,12 @@
 import React from "react";
 import Row from "../../components/Row";
 import Col from "../../components/Col";
-// import { Link } from "react-router-dom";
 import jo2 from "../../assets/jo2.jpg";
 import jim from "../../assets/jim.jpg";
 import alex from "../../assets/alex.jpg";
 import liam from "../../assets/liam.jpg";
 import PageTitle from "../../components/Title";
 import "./index.css";
-// import Card from "../components/Card";
-// import Container from "../about"
 
 function About() {
   return (
@@ -51,16 +48,16 @@ function About() {
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="our-team">
                 <div className="picture">
-                  <img className="img-fluid" src={jo2} />
+                  <img className="img-fluid" alt="Jo" src={jo2} />
                 </div>
                 <div className="team-content">
                   <h3 className="name">Johanna Casimir-Mahoney</h3>
                   <h4 className="title">Software Developer</h4>
                 </div>
                 <ul className="social">
-                  <li><a className="social-link" href="https://github.com/JohannaCasimirMahoney" target="_blank" className="fab fa-github"></a></li>
-                  <li><a className="social-link" href="https://www.linkedin.com/in/johannacasimirmahoney" target="_blank" className="fab fa-linkedin"></a></li>
-                  <li><a className="social-link" href="mailto:johannamahoney87@gmail" target="_blank" className="fab fa-dribbble"></a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://github.com/JohannaCasimirMahoney" target="_blank"> </a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/in/johannacasimirmahoney" target="_blank"> </a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="mailto:johannamahoney87@gmail" target="_blank" > </a></li>
                 </ul>
               </div>
             </div>
@@ -70,16 +67,16 @@ function About() {
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="our-team">
                 <div className="picture">
-                  <img className="img-fluid" src={jim} />
+                  <img className="img-fluid" alt="Jim" src={jim} />
                 </div>
                 <div className="team-content">
                   <h3 className="name">James Tatarakis</h3>
                   <h4 className="title">Software Developer</h4>
                 </div>
                 <ul className="social">
-                  <li> <a className="social-link" href="https://github.com/JimTatarakis" target="_blank" className="fab fa-github"></a></li>
-                  <li><a className="social-link" href="https://www.linkedin.com/in/james-tatarakis-9a595394/" target="_blank" className="fab fa-linkedin"></a></li>
-                  <li><a className="social-link" href="mailto:jimtatarakis@gmail.com" target="_blank" className="fab fa-dribbble"></a></li>
+                  <li> <a className="social-link fab fa-github"rel="noopener noreferrer" href="https://github.com/JimTatarakis" target="_blank"> </a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/in/james-tatarakis-9a595394/" target="_blank"> </a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="mailto:jimtatarakis@gmail.com" target="_blank"> </a></li>
                 </ul>
               </div>
             </div>
@@ -87,16 +84,16 @@ function About() {
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="our-team">
                 <div className="picture">
-                  <img className="img-fluid" src={alex} />
+                  <img className="img-fluid" alt="Alex" src={alex} />
                 </div>
                 <div className="team-content">
                   <h3 className="name">Alex Engelmann</h3>
                   <h4 className="title">Software Developer</h4>
                 </div>
                 <ul className="social">
-                  <li><a className="social-link" href="https://github.com/alex-engelmann" target="_blank" className="fab fa-github"></a></li>
-                  <li><a className="social-link" href="https://www.linkedin.com/in/alex-engelmann/" target="_blank" className="fab fa-linkedin"></a></li>
-                  <li><a className="social-link" href="mailto:alex.engelmann@gmail.com" target="_blank" className="fab fa-dribbble"></a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://github.com/alex-engelmann" target="_blank" > </a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/in/alex-engelmann/" target="_blank"> </a> </li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="mailto:alex.engelmann@gmail.com" target="_blank"> </a></li>
                 </ul>
               </div>
             </div>
@@ -104,16 +101,16 @@ function About() {
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="our-team">
                 <div className="picture">
-                  <img className="img-fluid" src={liam} />
+                  <img className="img-fluid" alt="Liam" src={liam} />
                 </div>
                 <div className="team-content">
                   <h3 className="name">Liam Hartigan</h3>
                   <h4 className="title">Software Developer</h4>
                 </div>
                 <ul className="social">
-                  <li><a className="social-link" href="https://github.com/VanillaCoder" target="_blank" className="fab fa-github"></a></li>
-                  <li><a className="social-link" href="https://www.linkedin.com/in/liam-hartigan-581ab9176/" target="_blank" className="fab fa-linkedin"></a></li>
-                  <li><a className="social-link" href="mailto:liamhearts@gmail.com" target="_blank" className="fab fa-dribbble"></a></li>
+                  <li><a className="social-link fab fa-github"rel="noopener noreferrer" href="https://github.com/VanillaCoder" target="_blank"> </a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/in/liam-hartigan-581ab9176/" target="_blank" > </a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="mailto:liamhearts@gmail.com" target="_blank"> </a></li>
                 </ul>
               </div>
             </div>

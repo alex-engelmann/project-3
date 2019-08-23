@@ -52,6 +52,7 @@ class DailyArtist extends React.Component {
                             </div>
                         )
                     }
+                    return <div></div>
 
                 })}
             </div>

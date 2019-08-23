@@ -18,7 +18,7 @@ app.use(express.json());
 
 // Sets up the Express App - Static Assets
 // =============================================================
-if (process.env.NODE_ENV === "production") { 
+ if (process.env.NODE_ENV === "production") { 
     app.use(express.static("client/build"));
  }
 

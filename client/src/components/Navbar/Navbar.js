@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import './Navbar.css';
 import logo from "../images/newlogo.png";
 
-import Login from "../Login/index";
-import Logout from "../Logout/index";
-
 export default class Navbar extends React.Component {
 
     render() {

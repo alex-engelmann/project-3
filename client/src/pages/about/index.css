@@ -121,3 +121,7 @@
   color: white;
   background-color: rgb(64, 173, 156);
 }
+
+.social-link{
+  display:none;
+}
