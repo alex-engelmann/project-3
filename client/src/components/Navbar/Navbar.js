@@ -2,9 +2,15 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import './Navbar.css';
 import logo from "../images/newlogo.png";
-export default function Navbar() {
-    return (
-        <React.Fragment>
+
+import Login from "../Login/index";
+import Logout from "../Logout/index";
+
+export default class Navbar extends React.Component {
+
+    render() {
+        return (
+            <React.Fragment>
                 <div className='logo-grid' >
                     <img src={logo} className="logo" alt="logo" ></img>
                 </div>
@@ -34,12 +40,21 @@ export default function Navbar() {
                             <Link className="text-decor" to="/contact">contact</Link>
                         </div>
                         <div className="router-link">
-                            <Link className="text-decor" to="/login">login</Link>
+                            <Login></Login>
+                        </div>
+                        <div className="router-link">
+                            <Logout></Logout>
+                        </div>
+                        <div className="router-link">
+                            {/* <button type="button" className="btn btn-primary" onClick="getUserInfo();">Get current user info</button> */}
                         </div>
                     </div>
                 </div>
-        </React.Fragment>
-    )
+            </React.Fragment>
+        )
+
+    }
+
 }
 
 
