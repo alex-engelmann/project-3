@@ -3,7 +3,7 @@ import './index.css';
 import API from '../../utilities/API';
 import Images from '../../components/ArtistImage';
 import ArtistCard from '../../components/ArtistCard';
-import PageTitle from '../../components/Title'
+import PageTitle from '../../components/Title';
 
 class Artists extends React.Component {
     state = {
