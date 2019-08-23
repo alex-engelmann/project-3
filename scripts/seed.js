@@ -45,8 +45,8 @@ const artistSeed = [
         ]
     },
     {
-        firstName: "Jimmy",
-        lastName: "GG",
+        firstName: "Jim",
+        lastName: "Tatarakis",
         artworks: [
             {
                 img: "https://i.imgur.com/j9kMk1o.jpg",
@@ -74,7 +74,7 @@ const artistSeed = [
             },
         ],
         about: "A short about me for the author.",
-        image: "https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e.jpg",
+        image: "https://avatars0.githubusercontent.com/u/47878388?s=400&u=f97e54ae067f02d4d5481ee34db60b7eb9700a0a&v=4",
         links: [
             "facebook.com",
             "instagram.com"

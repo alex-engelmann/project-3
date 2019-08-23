@@ -1,34 +1,35 @@
-// import Iframe from "react-iframe"
-// <Iframe url ="https://docs.google.com/forms/d/e/1FAIpQLSfAg_OdqBmzvza-xXsUdMaIIXOfmrgU6Jub8RqGlwh_aeh4AA/viewform?embedded=true"
-// width="450px"
-// height="753px"
-// id="myId"
-// className="myClassname"
-// display="initial"
-// position="relative" />
+import Iframe from "react-iframe"
+import React, { Component } from "react";
+// import "./index.css";
+// import "../../pages/contact/contact.css"
+import "./contact.css";
+import PageTitle from '../../components/Title'
 
-const Component = React.createClass({
-    iframe: function () {
-      return {
-        __html: this.props.iframe
-      }
-    },
-  
-    render: function() {
-      return (
-        <div>
-          <div dangerouslySetInnerHTML={ this.iframe() } />
+
+class Contact extends React.Component {
+  render() {
+    return (
+      <div className="contact-wrapper">
+        <PageTitle title="Contact"></PageTitle>
+        <div className="contact-container">
+          <div className="smaller-container">
+            <Iframe url="https://docs.google.com/forms/d/e/1FAIpQLSd2CJ2zsYwSF6ndw23-v6rt_ZNfU3GneBPI1J-lA8RgZgscNw/viewform?embedded=true"
+              width="650px"
+              height="753px"
+              id="forms"
+              className="myClassname"
+              display="initial"
+              position="relative" />
+          </div>
         </div>
-      );
-    }
-  });
-  
-  const iframe = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfAg_OdqBmzvza-xXsUdMaIIXOfmrgU6Jub8RqGlwh_aeh4AA/viewform?embedded=true" width="640" height="753" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>; 
-  
-  ReactDOM.render(
-    <Component iframe={iframe} />,
-    document.getElementById('container')
-  );
+      </div>
+    )
+
+  }
+
+}
+
+export default Contact;
 
 
 

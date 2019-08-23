@@ -1,28 +1,23 @@
-  .shopCart-flex-container{
+.Login-flex-container{
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     align-content: middle;
     width: 1000px;
   }
-  .ShoppingCart-shopBG {
+  .LoginBG {
     margin: 1rem 0.5rem;
     /* padding: 0.2rem; */
     height: auto;
     align-content: flex-start;
   }
-  .shoppingCart-grid {
+  .Login-grid {
     grid-column: 2;
     height: auto;
     grid-row: 3;
   }
-  .cartLeftSide {
-      align-content: flex-start;
-      background-color: rgba(64,173,156, 0.2);
-      padding: 0.2rem;
-      margin: 0.2rem;
-  }
-  .shoppingCartImg {
+
+  .LoginImg {
     transform: scale(0.6,0.6);
     border: 0.2rem solid rgba(0, 0, 0, 0.2);
     align-content: flex-start;

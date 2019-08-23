@@ -6,8 +6,9 @@ import About from '../../pages/about'
 import Artists from '../../pages/artists'
 import Artist from '../../pages/artist'
 import Artwork from '../../pages/artwork'
-// import * as Contact from '../../pages/contact'
+import Contact from '../../pages/contact'
 import ShoppingCart from '../../pages/shoppingCart'
+import Login from '../../pages/login'
 
 function AppRouter() {
     return (
@@ -21,11 +22,10 @@ function AppRouter() {
                 <Route path="/about" component={About} />
                 <Route path="/artists" component={Artists} />
                 <Route path="/artwork" component={Artwork} />
-                <Route path="/artist" component={Artist} />
-
-                {/* <Route path="/contact" component={ContactPage} />
-                <Route path="/artist/:id" component={ArtistPage} /> */}
+                 <Route path="/contact" component={Contact} />
+                <Route path="/artist/:id" component={Artist} />
                 <Route path="/shopcart" component={ShoppingCart} />
+                <Route path="/login" component={Login} />
             </Switch>
          
         </Router>

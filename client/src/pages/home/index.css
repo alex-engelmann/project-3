@@ -26,7 +26,9 @@
   justify-content: space-between;
   width: 95%;
   margin: 1rem 0.5rem;
-  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.2);
+  padding: 0.2rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.2);
+  background-color: rgb(27,30,34);
 }
 .home-flex-container .grid-img {
   grid-column: 2;
@@ -77,3 +79,16 @@
     opacity: 0.7;
     
   }
+
+  .Feat-Wrapper {
+    margin: 0.2rem;
+    padding: 0.2rem;
+    border: 0.2rem solid rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    width: 95%;
+}
+
+.Feat-Title {
+    margin: 02.rem;
+    color: rgb(64,173,156);
+}

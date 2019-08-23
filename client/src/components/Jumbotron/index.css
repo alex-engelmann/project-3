@@ -3,33 +3,22 @@
     /* margin-left: auto;
     margin-right: auto; */
     text-align: center;
+    color: rgb(64,173,156);
+    margin-top: 0.3rem
 }
 
 .welcome {
     margin-bottom: 0rem;
     padding-bottom: 0rem;
-    margin-left: 0px;
+    margin-left: 0rem;
+    color: rgb(64,173,156);
 }
-
-/* #spiral {
-    width: 40%;
-    height: auto;
-    margin: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-border-radius: 99rem;
-    -moz-border-radius: 99rem;
-    border-radius: 99rem;
-    border: 5px solid #eee;
-    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3)
-} */
 
 #spiral {
   display: inline-block;
   border: 1rem solid #272B30;
-  border-radius: 60%;
-  width: 50%;
+  border-radius: 80%;
+  width: 45%;
   height: auto;
 }
 
@@ -38,7 +27,7 @@ border: 0px;
   position: absolute;
   top: 50%; left: 50%;
   width: 100%;
-  transform: translate(-50%, -50%);
+  transform: translate(-60%, -60%);
 }
 
 
@@ -48,7 +37,7 @@ border: 0px;
 
 .jumbotron {
     display: block;
-    margin: 3rem 0.5rem;
+    margin: 2rem 0.5rem;
     width: 95%;
     height: auto;
     padding: 1rem;
