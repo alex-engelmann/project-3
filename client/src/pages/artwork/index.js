@@ -1,7 +1,7 @@
 import React from 'react';
 import API from '../../utilities/API';
 import Modal from '../../components/noShoppingModal';
-import ModalTrigger from '../../components/noShoppingTrigger';
+// import ModalTrigger from '../../components/noShoppingTrigger';
 import PageTitle from '../../components/Title';
 import './index.css';
 import Images from '../../components/ArtistImage';
@@ -30,10 +30,10 @@ class Artwork extends React.Component {
                         <div className="artwork-flex-container">
                             {this.state && this.state.artists && this.state.artists.map((result, index1) => {
                                 return (
-                                    <div>
+                                    <div key={index1}>
                                         {result.artworks.map((result, index) => {
                                             return (
-                                                <div>
+                                                <div key={index}>
                                                     
                                                     <Images
                                                         image={result.img}
