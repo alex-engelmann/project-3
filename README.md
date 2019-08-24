@@ -27,7 +27,7 @@ This single-page React app was made by:
 
 ### Technologies Implemented
 
-This MERN (MongoDB Express React Node.js) app also implements:
+This MERN (MongoDB Express React Node.js) full-stack application also implements:
 
    * [Python](https://www.python.org/)
 
