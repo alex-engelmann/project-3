@@ -14,6 +14,16 @@ Join us as we spread light and creativity through the ingenuity of original idea
   <img alt="screenshot" src=https://github.com/alex-engelmann/project-3/blob/master/misc/homepage.PNG>
 </p>
 
+### Our Team
+
+This single-page React app was made by:
+
+* [Alex Engelmann](https://github.com/alex-engelmann)
+* [Jim Tatarakis](https://github.com/JimTatarakis)
+* [Johanna Casimir-Mahoney](https://github.com/JohannaCasimirMahoney)
+* [Liam Hartigan](https://github.com/VanillaCoder)
+
+
 
 ### Technologies Implemented
 
