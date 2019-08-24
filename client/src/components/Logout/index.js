@@ -12,6 +12,7 @@ export default function Logout() {
             client_id={'444043567380-mcn6b6kcv673i8j9u8l1tjjbsoqr3qo8.apps.googleusercontent.com'}
             buttonText="Logout"
             onLogoutSuccess={responseGoogle}
+            
         >
         </GoogleLogout>
 
