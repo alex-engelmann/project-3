@@ -1,9 +1,8 @@
 import React from 'react';
 import './index.css';
 import API from '../../utilities/API';
-import PageTitle from '../../components/Title'
-import Modal from '../../components/noShoppingModal';
-import ModalTrigger from '../../components/noShoppingTrigger';
+import PageTitle from '../../components/Title';
+import Images from '../../components/ArtistImage';
 
 class Artist extends React.Component {
     state = {
@@ -61,21 +60,18 @@ class Artist extends React.Component {
                 <div className="img-grid" >
                     <div className="shopBG">
                         <div className="artwork-flex-container">
-                            {this.state && this.state.currentArtist && this.state.currentArtist.artworks && this.state.currentArtist.artworks.map(result => {
+                            {this.state && this.state.currentArtist && this.state.currentArtist.artworks && this.state.currentArtist.artworks.map((result, index) => {
                                 return (
                                     <div>
-                                        <img
-                                            className="images"
-                                            src={result.img}
-                                            alt='..'
-                                        ></img>
-                                        <ModalTrigger />
-
+                                        <Images
+                                            image={result.img}
+                                            artistID={this.state.currentArtist._id}
+                                            imageID={index}
+                                        ></Images>
                                     </div>
                                 )
                             })}
                         </div>
-                        <Modal />
                     </div>
                 </div >
             </div>
