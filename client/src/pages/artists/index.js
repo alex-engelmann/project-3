@@ -32,12 +32,18 @@ class Artists extends React.Component {
                                 <ArtistCard name={result.firstName + " " + result.lastName} id={result._id} artistImg={result.image} bio={result.about}></ArtistCard>
                                 <Images
                                     image={result.artworks[0].img}
+                                    artistID={result._id}
+                                    imageID={0}
                                 ></Images>
                                 <Images
                                     image={result.artworks[1].img}
-                                ></Images>
+                                    artistID={result._id}
+                                    imageID={1}                                
+                                    ></Images>
                                 <Images
                                     image={result.artworks[2].img}
+                                    artistID={result._id}
+                                    imageID={2}
                                 ></Images>
                             </div>
                         )
