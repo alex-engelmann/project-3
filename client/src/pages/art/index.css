@@ -1,0 +1,13 @@
+.cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.cover {
+    margin-top: 1rem;
+    height: 100%;
+    object-fit: scale-down;
+}
+.artInfo{
+    margin-top: 2rem;
+}
