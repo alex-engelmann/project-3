@@ -33,7 +33,7 @@ class DailyArtist extends React.Component {
 
                     if (index === this.state.artistOfTheDay) {
                         return (
-                            <div>
+                            <div key={index}>
                                 <div className="Feat-Wrapper" >
                                     <h1 className="Feat-Title" >Featured Artist</h1>
                                 </div>
@@ -52,7 +52,7 @@ class DailyArtist extends React.Component {
                             </div>
                         )
                     }
-                    return <div></div>
+                    return <div key={index}></div>
 
                 })}
             </div>
