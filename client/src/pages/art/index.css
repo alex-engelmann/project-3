@@ -1,15 +1,13 @@
 .cover img {
     display: block;
     width: 100%;
-    height: auto;  }
-  
+    height: auto;
+}
 .cover {
     margin-top: 1rem;
-    margin-left: -10rem;
-    width: 50%;
-    height: 4rem;
-    background-color: white;
+    height: 100%;
     object-fit: scale-down;
-  }
-
-  
+}
+.artInfo{
+    margin-top: 2rem;
+}

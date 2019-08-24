@@ -43,8 +43,16 @@ class Art extends React.Component {
                 {this.state && this.state.currentArt &&
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6 col-sm-12 cover">
+                            <div className="col-md-8 col-sm-12 cover">
                                 <img src={this.state.currentArt.img} alt="..." />
+                            </div>
+                            <div className="col-md-4 col-sm-12 artInfo">
+                                <p>Title: {this.state.currentArt.title}</p>
+                                <p>Description: {this.state.currentArt.description}</p>
+                                <p>Price: {this.state.currentArt.price}</p>
+
+                                <ModalTrigger />
+                                <Modal />
                             </div>
                         </div>
                     </div>
