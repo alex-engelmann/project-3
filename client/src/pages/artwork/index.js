@@ -51,10 +51,10 @@ class Artwork extends React.Component {
                 <div className="img-grid">
                     <div className="shopBG">
                         <div className="artwork-flex-container">
-                            {this.state.artworks.map(result => {
-                                console.log(result)
+                            {this.state.artworks.map((result, index) => {
+                                // console.log(result)
                                 return (
-                                    <div>
+                                    <div key={index}>
                                         <img
                                             className="images"
                                             src={result}
