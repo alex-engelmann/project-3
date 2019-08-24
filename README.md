@@ -19,7 +19,7 @@ Join us as we spread light and creativity through the ingenuity of original idea
 
 This MERN (MongoDB Express React Node.js) app also implements:
 
-   * [Python Turtle Graphics](https://docs.python.org/3.3/library/turtle.html)
+   * [Python](https://www.python.org/)
 
    * [Google Sign-In](https://developers.google.com/identity/sign-in/web/)
 
