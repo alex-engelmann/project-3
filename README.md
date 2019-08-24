@@ -1,6 +1,3 @@
-#Teal Canvas
-
-
 ### Overview
 
 This website allows a user to purchase digital art.
