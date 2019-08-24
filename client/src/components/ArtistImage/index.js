@@ -1,20 +1,23 @@
 import React from 'react'
 import "./index.css";
+import { Link } from "react-router-dom";
 
-// const Styles = {
-//     imgStyle: {
-//         width: "50px;",
-//         height: "50px;"
-//     }
-// }
+
+
+
 export default function images(props) {
+    
     return (
         <div>
+            <Link to={"/art/" + props.artistID + "/" + props.imageID}>
             <img
-            className="images"
+                className="images"
                 src={props.image}
                 alt='..'
             ></img>
+            </Link>
+
+            
         </div>
     )
 }

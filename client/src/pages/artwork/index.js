@@ -1,47 +1,24 @@
 import React from 'react';
 import API from '../../utilities/API';
 import Modal from '../../components/noShoppingModal';
-import ModalTrigger from '../../components/noShoppingTrigger';
-import PageTitle from '../../components/Title'
+// import ModalTrigger from '../../components/noShoppingTrigger';
+import PageTitle from '../../components/Title';
 import './index.css';
-
+import Images from '../../components/ArtistImage';
 class Artwork extends React.Component {
     state = {
-        artworks: []
+        artists: []
     }
 
     componentDidMount() {
-        this.getArtworks();
+        this.getArtists();
     }
 
-    getArtworks = () => {
+    getArtists = () => {
         API.find()
-            // .then((res) => {
-            //     res.data.forEach((x) => {
-            //         const newArr = [];
-            //         x.artworks.forEach((y) => {
-            //             if (!this.state[x._id]) {
-            //                 this.setState({ [x._id]: [] })
-            //                 newArr.push(y.img)
-            //             } else {
-            //                 newArr.push(y.img)
-            //             }
-            //         })
-            //         this.setState({ [x._id]: newArr })
-            //     })
-            // }
-            // )
-            // .then(console.log(`this is the state \n ${this.state}`))
-            // .catch(err => console.log(`get Artworks fxn not wroking \n ${err}`))
-            .then((res) => {
-                const newArr = [];
-                res.data.forEach((x) => {
-                    x.artworks.forEach((y) => {
-                        newArr.push(y.img)
-                    })
-                })
-                this.setState({ artworks: newArr })
-            })
+            .then(res =>
+                this.setState({ artists: res.data })
+            )
     }
 
     render() {
@@ -51,17 +28,23 @@ class Artwork extends React.Component {
                 <div className="img-grid">
                     <div className="shopBG">
                         <div className="artwork-flex-container">
-                            {this.state.artworks.map((result, index) => {
-                                // console.log(result)
+                            {this.state && this.state.artists && this.state.artists.map((result, index1) => {
                                 return (
-                                    <div key={index}>
-                                        <img
-                                            className="images"
-                                            src={result}
-                                            alt='..'
-                                        ></img>
-                                        <ModalTrigger />
+                                    <div key={index1}>
+                                        {result.artworks.map((result, index) => {
+                                            return (
+                                                <div key={index}>
+                                                    
+                                                    <Images
+                                                        image={result.img}
+                                                        artistID={this.state.artists[index1]._id}
+                                                        imageID={index}
+                                                    ></Images>
+                                                </div>
+                                            )
+                                        })}
                                     </div>
+
                                 )
                             })}
                         </div>
