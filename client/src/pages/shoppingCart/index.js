@@ -9,13 +9,13 @@ class Artwork extends React.Component {
     }
 
     componentDidMount() {
-        console.log('page worked!')
+        // console.log('page worked!')
     }
 
     render() {
         return (
             <div>
-                <PageTitle title="Shopping Cart Development in Progress" />
+                <PageTitle title="Shopping Cart" />
                 <div className="shoppingCart-grid">
                     <div className="ShoppingCart-shopBG">
                         <div className="shopCart-flex-container">
