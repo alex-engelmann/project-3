@@ -2,7 +2,8 @@ import { GoogleLogout } from 'react-google-login';
 import React from 'react';
 
 const responseGoogle = (response) => {
-    console.log(response);
+    console.log(response)
+    alert("successfully logged out");
 }
 
 
