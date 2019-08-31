@@ -8,7 +8,7 @@ We accomplish this while reaching many hoops would otherwise never experience ar
 
 Join us as we spread light and creativity through the ingenuity of original ideas.
 
-<p align="center"><a href=https://https://teal-canvas.herokuapp.com> Visit the deployed site</a></p>
+<p align="center"><a href=https://teal-canvas.herokuapp.com> Visit the deployed site</a></p>
 
 <p align="center">
   <img alt="screenshot" src=https://github.com/alex-engelmann/project-3/blob/master/misc/homepage.PNG>
